@@ -1,1 +1,1 @@
-("~/gocode/src/github.com/Lightspeed-Systems/rocketapi/")
+("~/.emacs.d/" "~/gocode/src/github.com/Lightspeed-Systems/rocketapi/")
