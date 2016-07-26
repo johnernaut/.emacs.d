@@ -149,39 +149,4 @@
 (require 'auto-complete-config)
 (require 'go-autocomplete)
 
-(require 'key-chord)
-(key-chord-mode 1)
-
-;; evil
-(require 'evil)
-(evil-mode 1)
-
-(setq key-chord-two-keys-delay 0.5)
-(key-chord-define evil-insert-state-map "fd" 'evil-normal-state)
-
-(require 'evil-leader)
-(global-evil-leader-mode)
-
-(evil-leader/set-leader "SPC")
-(evil-leader/set-key
-  "w" 'save-buffer
-  "h" 'evil-search-highlight-persist-remove-all
-  "a" 'ack-and-a-half
-  "g" 'magit-status
-  "j" 'dired-jump
-  "SPC" 'evil-buffer
-  "F" 'find-file
-  "f" 'projectile-find-file
-  "b" 'bs-show
-  "B" 'ibuffer
-  "x" 'execute-extended-command
-  "d" 'kill-this-buffer
-  "q" 'kill-buffer-and-window
-  )
-
-(define-key evil-normal-state-map "\C-j"  'evil-window-down)
-(define-key evil-normal-state-map "\C-k"  'evil-window-up)
-(define-key evil-normal-state-map "\C-h"  'evil-window-left)
-(define-key evil-normal-state-map "\C-l"  'evil-window-right)
-
 ;;; setup-applications.el ends here
